@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Navbar */
+.nav-bg {
+  background-color: #292f33;
+  padding: 15px 0;
+}
+a.navbar-brand {
+  display: contents;
+}
+.h3-color {
+  color: white;
+}
+ .links li {
+  display: inline-block;
+  color: gray;
+  margin: 0 23px;
+  font-size: 18px;
+}
+li:hover{
+  color: white;
+  text-decoration: underline;
+}
+
+.h3-color {
+  color: #fff;
+  font-weight: 700;
+}
+
+/* home-page */
+.bgcolor {
+  background: rgb(36 39 41);
+}
+img.img1 {
+  border-radius: 14px 14px 0 0;
+}
+.blog-1 {
+  margin: 6px 0px;
+  background: #292f33;
+  color: white;
+  border-radius: 20px;
+}
+.content-box {
+  padding: 16px;
+}
