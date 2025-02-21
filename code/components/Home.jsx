@@ -44,18 +44,20 @@ export default function Home() {
             <h1 className="text-center text-white">
               News - Top {category} Headlines
             </h1>
-            {articles.length != 0 &&
-              articles.map((item, index) => {
-                return (
-                  <Card
-                    key={index}
-                    title={item.title}
-                    desc={item.description}
-                    img={item.urlToImage}
-                    url={item.url}
-                  />
-                );
-              })}
+            {Array.isArray(articles) && articles.length !== 0 && 
+  articles.map((item, index) => {
+    return (
+      <Card
+        key={index}
+        title={item.title || "No title available"}
+        desc={item.description || "No description available"}
+        img={item.urlToImage || "default_image.jpg"}
+        url={item.url || "#"}
+      />
+    );
+  })}
+
+              
           </div>
         </div>
       </div>
