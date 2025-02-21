@@ -8,7 +8,7 @@ export default function HomeRoute() {
   const [articles, setarticles] = useState([]);
 
  const[category, setcategory] = useState('general');
-console.log(process.env.DB);
+// console.log(process.env.DB);
 
   useEffect(() => {
     console.log('useeffecct is running');
@@ -21,7 +21,7 @@ console.log(process.env.DB);
         console.log(err);
       });
   }, [category]);
-  console.log(category);
+  // console.log(category);
 
 
   return (
